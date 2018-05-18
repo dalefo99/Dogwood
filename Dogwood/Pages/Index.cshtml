@@ -1,0 +1,219 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<header class="fullscreen-header">
+    @Html.Partial("_MainNavigation")
+
+    <!-- Full Screen Hero -->
+    <div id="intro" class="view full-bg-img">
+        <div class="container-fluid mask rgba-white-light d-flex align-items-end justify-content-center">
+            <div class="row d-flex align-content-end mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="mb-2 dw-font">Dogwood</h2>
+                    <hr class="hr-white" />
+                    <h5 class="dw-font-alt text-muted my-4">Wedding Photography  <i class="fa fa-camera-retro"></i>  Durham, NC</h5>
+                    <button id="mainbtn" class="btn btn-outline-blue-grey">Enter</button>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Hero -->
+</header>
+
+
+<!-- Main Layout -->
+<main id="main-content">
+    <div class="container-fluid px-5">
+
+        <section id="featured" class="section-content container-fluid">
+            <div class="sectionHeader text-center dw-font-alt pt-5">
+                <h2>Featured Weddings</h2>
+                <p>Video Slideshows of a few of our recent weddings. These are the actual sideshows delivered to the client!</p>
+            </div>
+
+            <div class="card-deck">
+
+                <div class="card p-0 mb-3">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn m-0 p-0 video-btn " data-toggle="modal" data-src="https://player.vimeo.com/video/195125257" data-target="#myModal">
+                        <img class="card-img-top" src="~/images/feature-wedding-001.jpg" alt="Featured Wedding One" />
+                        <sub>Play SlideShow Video (Warning: Sound)</sub>
+                    </button>
+                    <div class="card-body text-center">
+                        <div class="dw-font-menu">The Brooke &amp; Brooks Wedding</div>
+                        <sub>Topsail Island, NC</sub>
+                    </div>
+                </div>
+
+                <div class="card p-0 mb-3">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn m-0 p-0 video-btn " data-toggle="modal" data-src="https://player.vimeo.com/video/180900829" data-target="#myModal">
+                        <img class="card-img-top" src="~/images/feature-wedding-002.jpg" alt="Featured Wedding Two" />
+                        <sub>Play SlideShow Video (Warning: Sound)</sub>
+                    </button>
+                    <div class="card-body text-center">
+                        <div class="dw-font-menu">The Megan &amp; Barrett Wedding</div>
+                        <sub>Wilmington, NC</sub>
+                    </div>
+                </div>
+
+                <div class="card p-0 mb-3">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn m-0 p-0 video-btn " data-toggle="modal" data-src="https://player.vimeo.com/video/221102128" data-target="#myModal">
+                        <img class="card-img-top" src="~/images/feature-wedding-003.jpg" alt="Featured Wedding Two" />
+                        <sub>Play SlideShow Video (Warning: Sound)</sub>
+                    </button>
+                    <div class="card-body text-center">
+                        <div class="dw-font-menu">The Abby &amp; Chris Wedding</div>
+                        <sub>Wilmington, NC</sub>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </section>
+        <hr class="my-5" />
+
+
+        <section id="portfolio" class="section container-fluid">
+            <div class="sectionHeader text-center dw-font-alt pt-5">
+                <h2>Portfolio</h2>
+                <p>Video Slideshows of a few of our recent weddings. These are the actual sideshows delivered to the client!</p>
+            </div>
+
+            <div class="container-fluid">
+                <div class="grid are-images-unloaded mx-auto">
+                    <div class="grid-sizer"></div>
+
+                    <div class="grid-item">
+                        <img class='modalClick' src='/images/portfolio/mansfield-1.jpg'  alt='Durham Wedding Photography' />
+                    </div>
+
+
+                </div>
+
+                <div class="page-load-status">
+                    <div class="loader-ellips infinite-scroll-request">
+                        <span class="loader-ellips__dot"></span>
+                        <span class="loader-ellips__dot"></span>
+                        <span class="loader-ellips__dot"></span>
+                        <span class="loader-ellips__dot"></span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+</main>
+<!-- Main Layout -->
+
+
+<div class="modal fade" id="myImgModal" tabindex="-1" role="dialog" aria-labelledby="Image by Dogwood" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="modal-body p-2 m-auto">
+                <img id="mimg" src="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="Video by Dogwood" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-body">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"></iframe>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div> 
+
+
+<script>
+    //-------------------------------------//
+    // init Masonry
+
+    var $grid = $('.grid').masonry({
+        itemSelector: 'none', // select none at first
+        columnWidth: '.grid-sizer',
+        //gutter: '.grid-gutter-sizer',
+        percentPosition: true,
+        // nicer reveal transition
+        visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+        hiddenStyle: { transform: 'translateY(100px)', opacity: 0 }
+    });
+
+    //get Masonry instance
+    var msnry = $grid.data('masonry');
+    
+    // initial items reveal
+    $grid.imagesLoaded(function () {
+        $grid.removeClass('are-images-unloaded');
+        $grid.masonry('option', { itemSelector: '.grid-item' });
+        var $items = $grid.find('.grid-item');
+        $grid.masonry('appended', $items);
+    });
+
+
+    var nextPage = [
+        '/Portpages/1',
+        '/Portpages/2',
+        '/PortPages/3',
+    ];
+    
+    function getNextPage() {
+        var page = nextPage[this.loadCount];
+        if (page) {
+            return page;
+        }
+    }
+    
+    //-------------------------------------//
+    // init Infinte Scroll
+    
+    $grid.infiniteScroll({
+        path: getNextPage,
+        history: false,
+        append: '.grid-item',
+        outlayer: msnry,
+        status: '.page-load-status',
+    });
+
+    // Add Modal to newly show images.
+    $grid.on('append.infiniteScroll', function (event, response, path, items) {
+        $('.modalClick').on('click', function () {
+            var sr = $(this).attr('src');
+            $('#mimg').attr('src', sr);
+            $('#myImgModal').modal('show');
+        });
+
+    });
+
+</script>
