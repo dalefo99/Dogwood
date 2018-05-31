@@ -13123,27 +13123,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dale\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\3255723\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dale\\source\\repos\\DogwoodWebsite\\Dogwood\\Dogwood.csproj",
+      "projectUniqueName": "C:\\Users\\3255723\\Source\\Repos\\Dogwood\\Dogwood\\Dogwood.csproj",
       "projectName": "Dogwood",
-      "projectPath": "C:\\Users\\dale\\source\\repos\\DogwoodWebsite\\Dogwood\\Dogwood.csproj",
-      "packagesPath": "C:\\Users\\dale\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dale\\source\\repos\\DogwoodWebsite\\Dogwood\\obj\\",
+      "projectPath": "C:\\Users\\3255723\\Source\\Repos\\Dogwood\\Dogwood\\Dogwood.csproj",
+      "packagesPath": "C:\\Users\\3255723\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\3255723\\Source\\Repos\\Dogwood\\Dogwood\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dale\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\3255723\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
