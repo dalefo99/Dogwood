@@ -9,3 +9,14 @@ C:\Users\dale\source\repos\Dogwood\Dogwood\obj\Debug\netcoreapp2.0\Dogwood.Assem
 C:\Users\dale\source\repos\Dogwood\Dogwood\obj\Debug\netcoreapp2.0\Dogwood.AssemblyInfo.cs
 C:\Users\dale\source\repos\Dogwood\Dogwood\obj\Debug\netcoreapp2.0\Dogwood.dll
 C:\Users\dale\source\repos\Dogwood\Dogwood\obj\Debug\netcoreapp2.0\Dogwood.pdb
+C:\Users\dale\source\repos\DogwoodWebsite\Dogwood\bin\Debug\netcoreapp2.0\Dogwood.deps.json
+C:\Users\dale\source\repos\DogwoodWebsite\Dogwood\bin\Debug\netcoreapp2.0\Dogwood.runtimeconfig.json
+C:\Users\dale\source\repos\DogwoodWebsite\Dogwood\bin\Debug\netcoreapp2.0\Dogwood.runtimeconfig.dev.json
+C:\Users\dale\source\repos\DogwoodWebsite\Dogwood\bin\Debug\netcoreapp2.0\Dogwood.dll
+C:\Users\dale\source\repos\DogwoodWebsite\Dogwood\bin\Debug\netcoreapp2.0\Dogwood.pdb
+C:\Users\dale\source\repos\DogwoodWebsite\Dogwood\obj\Debug\netcoreapp2.0\Dogwood.csprojResolveAssemblyReference.cache
+C:\Users\dale\source\repos\DogwoodWebsite\Dogwood\obj\Debug\netcoreapp2.0\Dogwood.csproj.CoreCompileInputs.cache
+C:\Users\dale\source\repos\DogwoodWebsite\Dogwood\obj\Debug\netcoreapp2.0\Dogwood.AssemblyInfoInputs.cache
+C:\Users\dale\source\repos\DogwoodWebsite\Dogwood\obj\Debug\netcoreapp2.0\Dogwood.AssemblyInfo.cs
+C:\Users\dale\source\repos\DogwoodWebsite\Dogwood\obj\Debug\netcoreapp2.0\Dogwood.dll
+C:\Users\dale\source\repos\DogwoodWebsite\Dogwood\obj\Debug\netcoreapp2.0\Dogwood.pdb
